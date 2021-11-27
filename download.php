@@ -9,7 +9,7 @@ if(ISSET($_REQUEST['id'])){
    while($data= mysqli_fetch_array($query)){	 
 	header("Content-Disposition: attachment; filename=".$data['file']);
 	header("Content-Type: application/octet-stream;");
-	readfile("C:/xampp/htdocs/dorroh/".$data['file']);
+	readfile("/upload".$data['file']);
    }
 }
 ?>

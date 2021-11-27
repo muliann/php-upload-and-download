@@ -5,7 +5,7 @@ if(isset($_POST['upload']))
      
  	$file = $_FILES['file']['name'];
     $file_loc = $_FILES['file']['tmp_name'];
-	$folder="C:/xampp/htdocs/dorroh/uploads";
+	$folder="/uploads";
 
 	/* make file name in lower case */
 	$new_file_name = strtolower($file);
